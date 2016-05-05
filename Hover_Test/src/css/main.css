@@ -1,3 +1,6 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400");
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -960,23 +963,41 @@ input[type="button"]:disabled,
 
 /* Header */
 
+body {
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
 body.landing #header {
     background-color: transparent;
+    /*position: fixed;*/
     left: 0;
-    position: absolute;
     top: 0;
+    background-color: white;
+
 }
+
 
 #header {
     background-color: white;
     color: whitesmoke;
-    opacity: 0.8;
-    position: fixed;
+    opacity: 1;
     cursor: default;
+    position: fixed;
     height: 3em;
     line-height: 3em;
     width: 100%;
     z-index: 10000;
+    box-shadow: 0 2px 3px rgba(0,0,0 .4);
+    top: 0;
+
+}
+
+.navbar_scrolled {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
 
 #header img{
@@ -1001,6 +1022,7 @@ body.landing #header {
 
 #header h1 a {
     font-size: 1.25em;
+    scroll
 }
 
 #header nav {
@@ -1083,6 +1105,7 @@ body.landing #header {
     padding: 6em 0em 2em;
     text-align: center;
     opacity: 1;
+    top: 0;
 }
 
 #banner h2 {
@@ -1240,6 +1263,7 @@ body.landing #header {
     border-top-style: solid;
     border-top-width: 1.5px;
     background-color: #323441;
+    height: 25em;
 }
 
 #news td{
@@ -1247,7 +1271,41 @@ body.landing #header {
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
+    width: 33%
 
+}
+
+#news h2, #news h3{
+    color: white;
+    margin-top: 0.75em;
+    text-align: center;
+
+}
+
+#news h4{
+    color: white;
+    margin-top: -1em;
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-wrap: normal;
+}
+
+#news img{
+    border-radius: 10px;
+
+}
+
+#news .button{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-weight: 300;
+}
+
+#news .button:hover{
+    background-color: #F76766;
+    border: 1px solid #ffffff;
+    font-weight: 300;
 }
 
 /* Team */
@@ -1283,6 +1341,27 @@ body.landing #header {
     color: white;
 }
 
+#Team .rounded {
+    border-color: #323441;
+    font-size: 1.5em;
+}
+
+#Team .rounded:active, #Team .rounded:hover {
+    border-color: #ffffff;
+}
+
+#Team a:active, #Team a:hover {
+    color: #ffffff;
+}
+
+#Team a {
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    color: #323441;
+}
 
 /* Form */
 
@@ -1302,10 +1381,16 @@ body.landing #header {
 
 }
 
+#message_form .form_buttons li{
+    display: inline-block;
+
+}
+
 #message_form .form_buttons li input{
     background-color: #F76766;
     margin-top: -1em;
     margin-bottom: -1em;
+    border: 1px solid #ffffff;
 
 }
 
@@ -1368,7 +1453,18 @@ body.landing #header {
 #footer {
     background: #323441;
     color: #323441;
-    padding: 6em 0em 4em;
+    padding: 2em 0em 1em;
+}
+
+#footer img{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: auto;
+    display: block;
+    padding-right: auto;
+    align-items: center;
+    margin-top: 0em;
+
 }
 
 #footer h2, #footer h3, #footer h4 {
@@ -1382,6 +1478,19 @@ body.landing #header {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     color: #888;
+    margin-top: 1em;
+}
+
+#footer .terms li{
+    margin-top: -1em;
+    display: inline-block;
+    float: none;
+}
+
+#footer .terms li a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
 
 #footer a:active, #footer a:hover {
