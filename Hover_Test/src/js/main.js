@@ -2,15 +2,13 @@
 
 var main = function() {
     $('a[href*=#]').click(function () {
-        var threeEms = Number(getComputedStyle(document.body, "").fontSize.match(/(\d*(\.\d*)?)px/)[1]) * 3.5;
+        var threeEms = Number(getComputedStyle(document.body, "").fontSize.match(/(\d*(\.\d*)?)px/)[1]) * 3;
 
-        $('html, body').animate({scrollTop: $(this.href).offset().top -100 }, 'slow');
-
-      /*  $('html, body').animate({
-            scrollTop: $($(this).attr('href')).offset().top
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - threeEms
         }, 500);
         return false;
-        */
+
     });
 
 };
