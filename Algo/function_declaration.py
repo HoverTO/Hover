@@ -1,6 +1,6 @@
 """ Module holds all functions called in algo_main."""
 
-import user_struct_declaration
+import User
 import progress_bar
 from math import radians, cos, sin, asin, sqrt
 

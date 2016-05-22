@@ -2,7 +2,7 @@
 
 import rw_helper
 import json
-import user_struct_declaration
+import User
 import function_declaration
 import admin_helper
 
@@ -15,7 +15,7 @@ if __name__ == '__main__':
 	user_matrix = rw_helper.table_reader("user_database.csv")[2:] # exclude headers
 	# fake client for testing purposes 
 	client_row = ["CL001", "John Doe", "M", "Company Ltd.", "Both", "Product Tester","-79.4823448", "43.752323", "-79.38218056", "43.64316667", "5", "3","4","N/A", "9999", "FM 88.1","FM 101.3","AM 1430","AM 1430","FM 92.5","2","1","3"]
-	client = user_struct_declaration.User(client_row[:5], client_row[6:10],client_row[5],client_row[10:15], client_row[15:20],client_row[20:])
+	client = User.User(client_row[:5], client_row[6:10],client_row[5],client_row[10:15], client_row[15:20],client_row[20:])
 
 	# Create user_list (of objects) from matrix
 	print "Initializing User objects..."
