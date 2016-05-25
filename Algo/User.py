@@ -1,4 +1,4 @@
-"""Module delcares the 'User' class to model users and store their settings."""
+ """Module delcares the 'User' class to model users and store their settings."""
 import time
 
 class User:
