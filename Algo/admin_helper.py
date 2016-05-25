@@ -19,3 +19,10 @@ def init_user_object_list(user_matrix):
 		progress_bar.progress(counter, len(user_matrix))
 	print "\n"
 	return user_object_list	
+
+def result_list_sorter(result_list, criteria_name, criteria_value):
+	"""
+	Takes in the result list (list of user objects) sorted by descending compatibility index. Resorts the array excluding 
+	all users that do not match the criteria value. The criteria name is the name of one of the User class attributes.
+	"""
+	# use the getattr() function to access attribute of User

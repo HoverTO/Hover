@@ -1,13 +1,14 @@
 """Module delcares the 'User' class to model users and store their settings."""
+import time
 
 class User:
 
-	def __init__(self, basic_info_array, geo_array, optional_info_array = [], pref_array = [], radio_array = [], match_priority_array = []):
+	def __init__(self, basic_info_array, geo_array, optional_info_array = [], pref_array = [], radio_array = [], match_priority_array = [], schedule_list = []):
 		""" 
-		Initializes a new user. Sets optional attributes to "N/A" or 99.99 to be filled in later. 
+		Initializes a new user. Sets optional attributes to "N/A" (str), 9999 (int) or 99.99 (float) to be filled in later. 
 		NOTE: the "match_priority_array" input must be completely filled in or left out entirely!
 		"""
-
+		# *********************************** User information ***********************************
 		# Initialize (mandatory) basic attributes that all users must input at onboarding.
 		self.ID = basic_info_array[0]
 		self.name = basic_info_array[1]
@@ -19,6 +20,8 @@ class User:
 		self.home_lat = float(geo_array[1])
 		self.dest_long = float(geo_array[2])
 		self.dest_lat = float(geo_array[3])
+
+		# *********************************** Matching information ***********************************
 		# Initialize (optional) basic information.
 		if optional_info_array != []:  
 			self.profession = optional_info_array[0]
@@ -49,6 +52,20 @@ class User:
 			self.match_priority_array = match_priority_array # These are characters, not ints!
 		else:
 			self.match_priority_array = ["N/A", "N/A", "N/A"]
+
+		# *********************************** Stats and Usage Tracking ***********************************
+		# Initialize (optional) carpooling schedule - this is a list of (weekday, hour, minute) triplets
+		# Note that both Users and Partnerships have schedule_list's - they need not be the same
+		if schedule_list != []:
+			self.schedule_list = schedule_list
+		else:
+			self.schedule_list = []
+		# Initialize partnership list - tracks partnership objects that the user is a part of
+		self.partnership_list = []
+
+		self.emmisions_saved = 0
+		self.money_saved = 0
+
 
 	def print_user_summary(self):
 		""" For debugging purposes"""

@@ -3,7 +3,7 @@
 import rw_helper
 import json
 import User
-import function_declaration
+import scoring
 import admin_helper
 
 if __name__ == '__main__':
@@ -36,7 +36,7 @@ if __name__ == '__main__':
 
 print "\n*** NOW EXECUTING TEST OF ALL OPERATION ***"
 
-print "\n Load JSON file, deserializing..."
+print "\n Load user database from JSON file, deserializing..."
 
 with open('user_database.json', 'r') as f:
 	json_dict_import = json.load(f)
@@ -44,11 +44,14 @@ with open('user_database.json', 'r') as f:
 print json_dict_import[0]
 
 # make a user_list of objects from json
-#pass that into scoring stuff
+# pass that into scoring stuff
 # spit out results in another json file
 
 print "\nGenerating Scoring Matrix..."
 # compatibility index array: (ID, score), (ID, score), ... sorted from highest compatibility to lowest
-compatibility_index_array = function_declaration.full_score_matrix(client, user_list_temp)
+compatibility_index_array = scoring.full_score_matrix(client, user_list_temp)
 print compatibility_index_array[:10]
+
+# generate a list of users from the compatibility array
+# pass the user list to the result_list_sorter to sort by a certain criteria 
 
