@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("http://fonts.googleapis.com/css?family=Lato:300,400");
-
+@import url("../bootstrap-3.3.6-dist/css/bootstrap.css");
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -317,7 +317,7 @@ textarea {
     margin-left: 1em;
     margin-bottom: 1em;
     text-decoration: none;
-    width: 50%;
+    width: 90%;
 }
 
 input[type="text"]:invalid,
@@ -341,11 +341,11 @@ textarea:focus {
     text-decoration: none;
     display: block;
     position: relative;
-    width: 100%;
+    width: 90%;
 }
 
 .select-wrapper select{
-    width: 53.4%;
+    width: 100%;
 
 
 }
@@ -533,7 +533,7 @@ input[type="radio"] + label:before {
 
 .icon.rounded {
     border-radius: 100%;
-    border: 1px solid #4dac71;
+    border: 1px solid whitesmoke;
     display: inline-block;
     height: 2em;
     line-height: 2em;
@@ -979,19 +979,17 @@ body.landing #header {
 }
 
 
-#header {
+.header {
     background-color: white;
     color: whitesmoke;
     opacity: 1;
     cursor: default;
     position: fixed;
-    height: 3em;
     line-height: 3em;
     width: 100%;
     z-index: 10000;
-    box-shadow: 0 2px 3px rgba(0,0,0 .4);
-    top: 0;
-
+    box-shadow: 0 1px 1px rgba(0,0,0, 1);
+    height: 3em;
 }
 
 .navbar_scrolled {
@@ -1000,16 +998,19 @@ body.landing #header {
     width: 100%
 }
 
-#header img{
+.header img{
     vertical-align: inherit;
     margin-top: 0.75em;
     margin-left: 2em;
     margin-bottom: 1em;
+    max-width: 100%;
+    height: auto;
+    display: block;
 
 }
 
 
-#header h1 {
+.header h1 {
     color: #ffffff;
     height: inherit;
     left: 2.5em;
@@ -1020,12 +1021,11 @@ body.landing #header {
     top: 0;
 }
 
-#header h1 a {
+.header h1 a {
     font-size: 1.25em;
-    scroll
 }
 
-#header nav {
+.header nav {
     height: inherit;
     line-height: inherit;
     position: absolute;
@@ -1034,23 +1034,23 @@ body.landing #header {
     vertical-align: middle;
 }
 
-#header nav > ul {
+.header nav > ul {
     list-style: none;
     margin: 0;
-    padding-left: 0;
+    /*padding-left: 0;*/
 
 }
 
-#header nav > ul > li {
+.header nav > ul > li {
     border-radius: 0px;
     display: inline-block;
-    margin-left: 0em;
+    /*margin-left: 0em;*/
     width: 100px;
     display: inline-flex;
     text-align: center;
 }
 
-#header nav > ul > li a {
+.header nav > ul > li a {
     -moz-transition: color 0.2s ease-in-out;
     -webkit-transition: color 0.2s ease-in-out;
     -o-transition: color 0.2s ease-in-out;
@@ -1061,18 +1061,27 @@ body.landing #header {
     text-decoration: none;
 }
 
-#header nav > ul > li a:hover {
-    display: inline-flex;
-    width: 100px;
+.header nav > ul > li a:hover {
+    /*display: inline-flex;*/
+    width: 100%;
     color: white;
-    background-color: dimgrey;
+    background-color: #323441;
+
 }
 
-#header nav > ul > li:first-child {
+
+/*.header nav > ul > li:hover {
+    width: 100px;
+    background-color: dimgrey;
+    text-align: center;
+}
+*/
+
+.header nav > ul > li:first-child {
     margin-left: 0;
 }
 
-#header nav > ul > li .button {
+.header nav > ul > li .button {
     height: 2.25em;
     line-height: 2.25em;
     margin-bottom: 0;
@@ -1082,15 +1091,15 @@ body.landing #header {
     vertical-align: middle;
 }
 
-#header .container {
+.header .container {
     position: relative;
 }
 
-#header .container h1 {
+.header .container h1 {
     left: 0;
 }
 
-#header .container nav {
+.header .container nav {
     right: 0;
 }
 
@@ -1106,6 +1115,8 @@ body.landing #header {
     text-align: center;
     opacity: 1;
     top: 0;
+    display: table;
+    width: 100%;
 }
 
 #banner h2 {
@@ -1124,6 +1135,9 @@ body.landing #header {
 #banner img {
     padding: 0 0 0 0;
     margin-bottom: -20px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 
 }
 
@@ -1140,7 +1154,10 @@ body.landing #header {
 
 #banner .actions {
     margin: 3em 0 0 0;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 
 #banner .button {
     background-color: transparent;
@@ -1174,6 +1191,7 @@ body.landing #header {
 {
     margin-bottom: -1em;
     padding-bottom: 0em;
+
 }
 
 
@@ -1182,8 +1200,13 @@ body.landing #header {
     float: left;
     display: inline-block;
     padding: 1em 0 1em 0;
-    height: 15em;
-    width: 50% ;
+    height: auto;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 }
 
 #learn_more #about_left h2{
@@ -1194,6 +1217,8 @@ body.landing #header {
 #learn_more #about_left .line-separator{
     height:1px;
     width: 30%;
+    max-width: 50%;
+    min-width: 30%;
     margin-left: 2em;
     margin-top: -1em;
     background: white;
@@ -1209,31 +1234,48 @@ body.landing #header {
 
 #learn_more #about_right{
     background-color: #C9674A;
-    width: 50%;
-    height: 15em;
-    padding: 1em 0 1em 0;
+    height: auto;
+    padding: 2em 0 1em 0;
     display: inline-block;
+    border-top-color: white;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
 }
 
-#learn_more #about_right #features_table{
-    margin-bottom: 0em;
 
-}
-
-#learn_more #about_right #features_table p{
+#learn_more #about_right p{
     color: white;
-    margin-bottom: auto;
-    margin-top: auto;
+    margin-left: 1em;
+}
+
+#learn_more img{
+   margin-left: 1em;
 
 }
 
-#learn_more #about_right #features_table tr td img{
-    display:block;
+#learn_more .row{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+
+}
+
+/*#learn_more #about_right #features_table tr td img{
+    display:table;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
+
+
+#learn_more #about_right #features_table{
+    margin-bottom: 0em;
+
+}
+*/
 
 /* #learn_more .feature_el p img {
     float: left;
@@ -1251,7 +1293,7 @@ body.landing #header {
     display: block;
     border-top-color: white;
     border-top-style: solid;
-    border-top-width: 2px;
+    border-top-width: 10px;
 
 }
 
@@ -1263,16 +1305,12 @@ body.landing #header {
     border-top-style: solid;
     border-top-width: 1.5px;
     background-color: #323441;
-    height: 25em;
+    align-items: center;
 }
 
-#news td{
+#news a{
     margin-left: auto;
     margin-right: auto;
-    padding-left: auto;
-    padding-right: auto;
-    width: 33%
-
 }
 
 #news h2, #news h3{
@@ -1282,17 +1320,21 @@ body.landing #header {
 
 }
 
-#news h4{
+#news p{
     color: white;
     margin-top: -1em;
     text-align: center;
     margin-left: 1em;
     margin-right: 1em;
     text-wrap: normal;
+    font-size: 100%;
 }
 
 #news img{
     border-radius: 10px;
+    max-width: 80%;
+    width: 60%;
+    height:auto;
 
 }
 
@@ -1300,6 +1342,7 @@ body.landing #header {
     background-color: transparent;
     border: 1px solid #ffffff;
     font-weight: 300;
+    margin-bottom: 1em;
 }
 
 #news .button:hover{
@@ -1339,6 +1382,9 @@ body.landing #header {
 
 #Team p{
     color: white;
+    font-size: medium;
+    margin-right: 1em;
+    margin-left: 1em;
 }
 
 #Team .rounded {
@@ -1361,6 +1407,7 @@ body.landing #header {
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
     color: #323441;
+    margin-bottom: 1em;
 }
 
 /* Form */
@@ -1370,14 +1417,21 @@ body.landing #header {
     padding-bottom: 0.1em;
     background-image: url("../img/form-image.jpg");
     background-size: 100%;
-    background-position: right;
+    background-position: bottom;
+    background-repeat: no-repeat;
 /*linear-gradient(to right, black 0%,white 100%), url('w3css.gif');*/
     background-blend-mode: color-dodge;
    /* background-image: linear-gradient(100deg, white 50%, #FFBFA5 10%, #FD965D 30%, black 50%);*/
+    height: auto;
+    border-bottom-color: white;
+    border-bottom-width: 1.5px;
+    border-bottom-style: solid;
+    z-index: 500;
 }
 
 #message_form h3{
-    margin-left: 1em;
+    margin-top: 1em;
+    margin-left: 0.8em;
 
 }
 

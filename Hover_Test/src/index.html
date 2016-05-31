@@ -17,6 +17,10 @@
         <script src="js/main.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/init.js"></script>
+        <script src="bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+        <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-3.3.6-dist/js/npm.js"></script>
+
     </head>
     <body class="landing">
         <!--[if lt IE 8]>
@@ -26,12 +30,12 @@
         <!-- Add your site or application content here -->
 
         <!-- Header -->
-        <header id="header">
-            <a href="#news"><img src="img/hover_black-2.png" height="50%" width = "10%" align="left"/></a>
+        <header class="header col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <a href="#"><img src="img/hover_black-2.png" align="left"/></a>
             <nav id="nav">
-                <ul>
+                <ul class="text-center">
                     <li><a href="#banner">Home</a></li>
-                    <li><a href="#learn_more">Features</a></li>
+                    <li><a href="#about_left">Features</a></li>
                     <li><a href="#news">Press</a></li>
                     <li><a href="#Team">About Us</a></li>
                     <li><a href="#message_form">Contact</a></li>
@@ -40,50 +44,67 @@
         </header>
 
         <!-- Banner -->
-        <section id="banner">
-            <div class="banner_foreground">
-                <img src="img/hover_white-2.png"/>
+        <section id="banner" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="container-fluid">
+                <img class ="center-block" src="img/hover_white-2.png"/>
                 <div class="line-separator"></div>
-                <ul class="actions">
+                <ul class="actions center-block lead">
                     <li>
                         <a href="#" class="button big button_top">Get Started</a>
                     </li>
                     <li>
                         <a href="#learn_more" class="button big">Learn More</a>
                     </li>
-
                 </ul>
             </div>
         </section>
 
         <!-- Learn More -->
         <section id="learn_more">
-        <div class="about_hover">
-            <div id="about_left">
+        <div class="about_hover clearfix">
+            <div id="about_left" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <h2>About Hover</h2>
                 <div class="line-separator"></div>
-                <p>Hover is an Awesome App.</p>
+                <p>Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App. Hover is an Awesome App.
+                    Hover is an Awesome App.</p>
 
             </div>
-            <div id="about_right">
+            <div id="about_right" class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <div class="row">
+                    <section class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        <img src="img/job-2.png" width="95px" height="75px"/>
+                    </section>
+                    <section class="col-lg-8 col-lg-offset-2 col-md-7 col-md-offset-2 col-s-4 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                        <p>I am currently writing this text to test out the height and width of the column
+                            in this table because I am not sure how big it is</p>
+                    </section>
 
-                <table id="features_table">
-                    <tr>
-                        <td><img src="img/job-2.png" width="95px" height="75px"/></td>
-                        <td><p>I am currently writing this text to test out the height and width of the column
-                        in this table because I am not sure how big it is</p></td>
-                    </tr>
+                </div>
+                <div class="row">
+                    <section class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        <img src="img/job-2.png" width="95px" height="75px"/>
+                    </section>
+                    <section class="col-lg-8 col-lg-offset-2 col-md-7 col-md-offset-2 col-s-4 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                        <p>I am currently writing this text to test out the height and width of the column
+                            in this table because I am not sure how big it is</p>
+                    </section>
 
-                    <tr>
-                        <td><img src="img/radio-2.png" width="75px" height="75px"/></td>
-                        <td><p>Test1</p></td>
-                    </tr>
+                </div>
+                <div class="row">
+                    <section class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                        <img src="img/job-2.png" width="95px" height="75px"/>
+                    </section>
+                    <section class="col-lg-8 col-lg-offset-2 col-md-7 col-md-offset-2 col-s-4 col-sm-offset-1 col-xs-9 col-xs-offset-1">
+                        <p>I am currently writing this text to test out the height and width of the column
+                            in this table because I am not sure how big it is</p>
+                    </section>
+                </div>
 
-                    <tr>
-                        <td><img src="img/temperature-2.png" width="35px" height="75px"/></td>
-                        <td><p>Test1</p></td>
-                    </tr>
-                </table>
 
             </div>
 
@@ -98,90 +119,76 @@
         <!-- In the News -->
         <section id="news">
             <h2>Featured In:</h2>
-            <table class="news_table">
-                <tr>
-                    <td align="center"><a href="http://www.cbc.ca/news/canada/toronto/traffic-hackathon-winners-1.3527044">
-                   <img src="img/betakit-square.png" height="60%"/></a>
-                    <h3>CBC</h3>
-                    <h4><i>Toronto traffic hackathon winners create 'Match.com of ridesharing' to fight congestion</i></h4>
-                    <a href="http://www.cbc.ca/news/canada/toronto/traffic-hackathon-winners-1.3527044" class="button big button_top">Read Article</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://betakit.com/winners-of-dcongestant-hackathon-create-match-com-of-ridesharing/">
-                            <img src="img/betakit-square.png" height="60%"/></a>
-                        <h3>Betakit</h3>
-                    <h4><i>Winners of [D]congestant Hackathon Create “Match.com of Ridesharing”</i></h4>
-                        <a href="http://betakit.com/winners-of-dcongestant-hackathon-create-match-com-of-ridesharing/" class="button big button_top">Read Article</a>
-                    </td>
-                    <td align="center">
-                        <a href="http://www.techvibes.com/blog/dcongestant-hackathon-uncovers-solutions-to-torontos-traffic-woes-2016-04-04">
-                            <img src="img/techvibes-square.png" height="60%"/></a>
-                        <h3>Techvibes</h3>
-                        <h4><i>[D]congestant Hackathon Uncovers Solutions to Toronto's Traffic Woes</i></h4>
-                        <a href="http://www.techvibes.com/blog/dcongestant-hackathon-uncovers-solutions-to-torontos-traffic-woes-2016-04-04" class="button big button_top">Read Article</a>
-                    </td>
-                </tr>
-
-            </table>
-
+            <div class="row">
+            <section id="CBC" class="col-lg-4 col-md-4 col-md-offset-0 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2  text-center">
+                <a href="http://www.cbc.ca/news/canada/toronto/traffic-hackathon-winners-1.3527044">
+                    <img src="img/betakit-square.png"/></a>
+                <h3>CBC</h3>
+                <p><i>Toronto traffic hackathon winners create 'Match.com of ridesharing' to fight congestion</i></p>
+                <a href="http://www.cbc.ca/news/canada/toronto/traffic-hackathon-winners-1.3527044" class="button big button_top">Read Article</a>
+            </section>
+            <section id="Betakit" class="col-lg-4 col-md-4 col-md-offset-0 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center">
+                <a href="http://betakit.com/winners-of-dcongestant-hackathon-create-match-com-of-ridesharing/">
+                    <img src="img/betakit-square.png" height="40%"/></a>
+                <h3>Betakit</h3>
+                <p><i>Winners of [D]congestant Hackathon Create “Match.com of Ridesharing”</i></p>
+                <a href="http://betakit.com/winners-of-dcongestant-hackathon-create-match-com-of-ridesharing/" class="button big button_top">Read Article</a>
+            </section>
+            <section id="Techvibes" class="col-lg-4 col-md-4 col-md-offset-0 col-lg-offset-0 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2 text-center">
+                <a href="http://www.techvibes.com/blog/dcongestant-hackathon-uncovers-solutions-to-torontos-traffic-woes-2016-04-04">
+                    <img src="img/techvibes-square.png" height="40%"/></a>
+                <h3>Techvibes</h3>
+                <p><i>[D]congestant Hackathon Uncovers Solutions to Toronto's Traffic Woes</i></p>
+                <a href="http://www.techvibes.com/blog/dcongestant-hackathon-uncovers-solutions-to-torontos-traffic-woes-2016-04-04" class="button big button_top">Read Article</a>
+            </section>
+            </div>
         </section>
 
         <!-- Our Team -->
-        <section id="Team">
+        <section id="Team" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2>Our Team</h2>
-            <table class="team_table">
-                <tr>
-                    <td align="center">
-                        <img src="img/maxh_photo.png" width="65%"/></td>
-                    <td align="center">
-                            <img src="img/malik_photo.png" width="75%" />
-                    </td>
-                    <td align="center">
-                            <img src="img/maxw_photo.png" width="75%"/>
-                    </td>
-                    <td align="center">
-                        <img src="img/kevin_photo.png" width="75%"/>
-                    </td>
-                </tr>
-                <tr>
-                    <td align="center">
-                        <h3>MAX HOWARTH</h3>
-                        <p>Hi my name is Max Howarth! I'm awesome :D; Hi my name is Max Howarth! I'm awesome :D</p>
-                        <a href=https://ca.linkedin.com/in/maxhowarth class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                    </td>
-                    <td align="center">
-                        <h3>MALIK ISMAIL</h3>
-                        <p>Hi my name is Malik Ismail! I'm awesome :D Hi my name is Malik Ismail! I'm awesome :D</p>
-                        <a href="https://ca.linkedin.com/pub/malik-ismail/57/41/14b" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                    </td>
-                    <td align="center">
-                        <h3>MAX WEI</h3>
-                        <p>Hi my name is Max Wei! I'm awesome :D:D:D:D Hi my name is Max Wei! I'm awesome :D:D:D:D</p>
-                        <a href="https://ca.linkedin.com/in/max-shuxin-wei-a337a96a" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                    </td>
-                    <td align="center">
-                        <h3>KEVIN ZHU</h3>
-                        <p>Hi my name is Kevin Zhu! I'm awesome :D:D:D:D</p>
-                        <a href="https://ca.linkedin.com/in/kevinsyzhu" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
-                    </td>
-                </tr>
+            <div class="row">
+                <section id ="MaxH" class="col-lg-3 col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2  text-center">
+                    <img src="img/maxh_photo.png" width="65%"/>
+                    <h3>MAX HOWARTH</h3>
+                    <p>Hi my name is Max Howarth! I'm awesome :D; Hi my name is Max Howarth! I'm awesome :D</p>
+                    <a href="https://ca.linkedin.com/in/maxhowarth" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                </section>
+                <section id="Malik" class="col-lg-3 col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2  text-center">
+                    <img src="img/malik_photo.png" width="65%"/>
+                    <h3>MALIK ISMAIL</h3>
+                    <p>Hi my name is Malik Ismail! I'm awesome :D; Hi my name is Max Howarth! I'm awesome :D</p>
+                    <a href="https://ca.linkedin.com/pub/malik-ismail/57/41/14b" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                </section>
+                <section id="MaxW" class="col-lg-3 col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2  text-center">
+                    <img src="img/maxw_photo.png" width="65%"/>
+                    <h3>MAX WEI</h3>
+                    <p>Hi my name is Max Shuxin Wei! I'm awesome :D; Hi my name is Max Howarth! I'm awesome :D</p>
+                    <a href="https://ca.linkedin.com/in/max-shuxin-wei-a337a96a" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                </section>
+                <section id="Kevin" class="col-lg-3 col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2  text-center">
+                    <img src="img/kevin_photo.png" width="65%"/>
+                    <h3>KEVIN ZHU</h3>
+                    <p>Hi my name is Kevin Zhu! I'm awesome :D; Hi my name is Max Howarth! I'm awesome :D</p>
+                    <a href="https://ca.linkedin.com/in/kevinsyzhu" class="icon rounded fa-linkedin"><span class="label">LinkedIn</span></a>
+                </section>
 
-            </table>
-
+            </div>
         </section>
 
         <!-- Form -->
         <section id="message_form">
+            <h5>.</h5>
             <h3>Have a Question? Shoot us a message!</h3>
             <form method="post" action="#">
-                <div class="row uniform 50%">
-                    <div class="6u 12u$(xsmall)">
+                <div class="row">
+                    <div class="row col-lg-7 col-md-7 col-s-12 col-xs-12">
                         <input type="text" name="name" id="name" value="" placeholder="Name" />
                     </div>
-                    <div class="6u$ 12u$(xsmall)">
+                    <div class="row col-lg-7 col-md-7 col-s-12 col-xs-12">
                         <input type="email" name="email" id="email" value="" placeholder="Email" />
                     </div>
-                    <div class="row uniform 50%">
+                    <div class="row col-lg-7 col-md-7 col-s-12 col-xs-12">
                         <div class="select-wrapper">
                             <select name="category" id="category">
                                 <option value="">- Where did you hear about Hover? -</option>
@@ -192,10 +199,10 @@
                         </div>
                     </div>
 
-                    <div class="12u$">
+                    <div class="row col-lg-7 col-md-7 col-s-12 col-xs-12">
                         <textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
                     </div>
-                    <div class="12u$">
+                    <div class="row col-lg-7 col-md-7 col-s-12 col-xs-12">
                         <ul class="actions form_buttons">
                             <li><input type="submit" value="Send Message" class="special" /></li>
                             <li><input type="reset" value="Reset" /></li>

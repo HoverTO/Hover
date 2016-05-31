@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400");
+@import url("../bootstrap-3.3.6-dist/css/bootstrap.css");
+
+
+
+@media (min-width: 768px) {
+      #test_box {
+        position: fixed;
+        top: 51px;
+        bottom: 100px;
+        left: 100px;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+.user_list{
+    width:100%;
+    list-style: none;
+    background-color: whitesmoke;
+}
+
+.user_list .user{
+    background-color: white;
+    border-top: whitesmoke;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom: whitesmoke;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    width: 100%;
+    height: 150px;
+}
+
+
+.user_list .user p:first-child{
+    padding-top: 10px;
+}
+
+.user_list .user img{
+    padding-top: 5px;
+
+}
+
+.user_list .user:hover{
+    display: inline-flex;
+    background-color: #F76766;
+}
+
+.user #map{
+    margin-top: 10px;
+    display: block;
+}
+
+.user #compatibility{
+    margin-top: 50px;
+    font-size: large;
+    color: black;
+    display: block;
+}
+
+.user .progress{
+    margin-top: 10px;
+    margin-left: -40px;
+}
