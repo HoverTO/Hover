@@ -1,5 +1,0 @@
-<resources>
-	<string name="app_name">HoverApp</string>
-	<string name="title_activity_hover">Hover</string>
-	<string name="title_activity_map_view">MapViewActivity</string>
-</resources>
