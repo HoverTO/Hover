@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/background_light"
+              android:paddingTop="16dp"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp">
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp">
+
+		<EditText
+			android:id="@+id/input_firstname"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:hint="@string/input_firstname_hint" />
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp">
+
+		<EditText
+			android:id="@+id/input_lastname"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:hint="@string/input_lastname_hint" />
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp">
+
+		<EditText
+			android:id="@+id/input_email"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:hint="@string/input_email_hint" />
+	</android.support.design.widget.TextInputLayout>
+
+	<TextView
+		android:text="Gender"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView4"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:textSize="16sp"
+		android:textColor="@color/colorDark"/>
+
+	<RadioGroup
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RadioButton
+			android:text="Male"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton2"
+			android:layout_weight="1"/>
+
+		<RadioButton
+			android:text="Female"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton4"
+			android:layout_weight="1"/>
+
+		<RadioButton
+			android:text="Other"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton3"
+			android:layout_weight="1"/>
+
+	</RadioGroup>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp">
+
+		<EditText
+			android:id="@+id/input_home_address"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:hint="@string/input_home_address_hint" />
+	</android.support.design.widget.TextInputLayout>
+
+	<android.support.design.widget.TextInputLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="8dp">
+
+		<EditText
+			android:id="@+id/input_work_address"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:inputType="textEmailAddress"
+			android:hint="@string/input_work_address_hint" />
+	</android.support.design.widget.TextInputLayout>
+
+	<TextView
+		android:text="I want to..."
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/textView5"
+		android:layout_marginLeft="10dp"
+		android:layout_marginTop="10dp"
+		android:textSize="16sp"
+		android:textColor="@color/colorDark"/>
+
+	<RadioGroup
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<RadioButton
+			android:text="Drive"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton5"
+			android:layout_weight="1"/>
+
+		<RadioButton
+			android:text="Ride"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton6"
+			android:layout_weight="1"/>
+
+		<RadioButton
+			android:text="Either"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:id="@+id/radioButton7"
+			android:layout_weight="1"/>
+
+	</RadioGroup>
+</LinearLayout>
