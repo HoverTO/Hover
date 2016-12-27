@@ -48,6 +48,9 @@ public class LoginActivity extends AppCompatActivity {
 		});
 	}
 
+	/**
+	 * Check credentials and start application
+	 */
 	public void login() {
 		String email = email_text.getText().toString();
 		String password = password_text.getText().toString();
@@ -63,12 +66,6 @@ public class LoginActivity extends AppCompatActivity {
 				this.finish();
 			}
 		}
-	}
-
-	@Override
-	public void onBackPressed() {
-		// Disable going back to the MainActivity
-		moveTaskToBack(true);
 	}
 
 }

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorPrimaryMedium"
+		android:paddingTop="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:paddingBottom="16dp">
+
+		<android.support.design.widget.CoordinatorLayout
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout android:layout_width="match_parent"
+			              android:layout_height="match_parent"
+			              android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/viewA"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:layout_weight="0.6"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="match_parent"
+						android:layout_height="256dp"
+						app:srcCompat="@drawable/ic_person_black_128dp"
+						android:background="@color/colorPrimaryDark"
+						android:layout_alignParentTop="true"
+						android:layout_alignParentLeft="true"
+						android:layout_alignParentStart="true"
+						android:layout_marginBottom="16dp"
+						android:elevation="6dp"
+						android:id="@+id/profile_image"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/fab"
+				android:layout_width="match_parent"
+				android:layout_height="53dp"
+				android:layout_margin="16dp"
+				android:clickable="true"
+				android:src="@drawable/ic_camera_alt_white_24dp"
+				app:layout_anchor="@id/viewA"
+				app:layout_anchorGravity="bottom|right|end"/>
+
+		</android.support.design.widget.CoordinatorLayout>
+
+		<RelativeLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:elevation="6dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:id="@+id/input_name_layout"
+				android:layout_toRightOf="@+id/name_icon">
+
+				<EditText
+					android:id="@+id/input_name"
+					android:layout_width="264dp"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_name_hint" />
+
+			</android.support.design.widget.TextInputLayout>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:srcCompat="@drawable/ic_mail_black_64dp"
+				android:id="@+id/email_icon"
+				android:layout_weight="1"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_above="@+id/input_phone_layout"
+				android:layout_alignTop="@+id/input_email_layout"/>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:id="@+id/input_email_layout"
+				android:layout_below="@+id/input_name_layout"
+				android:layout_toRightOf="@id/email_icon">
+
+				<EditText
+					android:id="@+id/input_email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_email_hint" />
+			</android.support.design.widget.TextInputLayout>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:srcCompat="@drawable/ic_call_black_64dp"
+				android:id="@+id/phone_icon"
+				android:layout_weight="1"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_above="@+id/gender_text_label"
+				android:layout_alignTop="@+id/input_phone_layout"/>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:id="@+id/input_phone_layout"
+				android:layout_below="@+id/input_email_layout"
+				android:layout_toRightOf="@id/phone_icon">
+
+				<EditText
+					android:id="@+id/input_phone"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_phone_hint" />
+			</android.support.design.widget.TextInputLayout>
+
+			<TextView
+				android:text="Gender"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/gender_text_label"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"
+				android:textSize="18sp"
+				android:textColor="@color/colorDark"
+				android:layout_below="@+id/input_phone_layout"/>
+
+			<RadioGroup
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/gender_radiogroup"
+				android:layout_below="@+id/gender_text_label">
+
+				<RadioButton
+					android:text="Male"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton2"
+					android:layout_weight="1"/>
+
+				<RadioButton
+					android:text="Female"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton4"
+					android:layout_weight="1"/>
+
+			</RadioGroup>
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				app:srcCompat="@drawable/ic_account_circle_black_64dp"
+				android:id="@+id/name_icon"
+				android:layout_weight="1"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_above="@+id/input_email_layout"
+				android:layout_alignTop="@+id/input_name_layout"/>
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:elevation="6dp"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp">
+
+				<EditText
+					android:id="@+id/input_home_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_home_address_hint" />
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp">
+
+				<EditText
+					android:id="@+id/input_postal_code"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_postal_code_hint" />
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp">
+
+				<EditText
+					android:id="@+id/input_work_address"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:inputType="textEmailAddress"
+					android:hint="@string/input_work_address_hint" />
+			</android.support.design.widget.TextInputLayout>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/office_list_prompt"
+				android:layout_marginLeft="6dp"/>
+
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/office_spinner"
+				android:entries="@array/office_list"
+				android:prompt="@string/office_list_prompt"
+				android:layout_marginBottom="12dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/group_list_prompt"
+				android:layout_marginLeft="6dp"/>
+
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/group_spinner"
+				android:entries="@array/group_list"
+				android:prompt="@string/group_list_prompt"
+				android:layout_marginBottom="12dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/role_list_prompt"
+				android:layout_marginLeft="6dp"/>
+
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/role_spinner"
+				android:entries="@array/role_list"
+				android:prompt="@string/role_list_prompt"
+				android:layout_marginBottom="12dp"/>
+
+			<TextView
+				android:text="I want to..."
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView5"
+				android:layout_marginLeft="10dp"
+				android:layout_marginTop="10dp"
+				android:textSize="16sp"
+				android:textColor="@color/colorDark"/>
+
+			<RadioGroup
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+				<RadioButton
+					android:text="Drive"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton5"
+					android:layout_weight="1"/>
+
+				<RadioButton
+					android:text="Ride"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton6"
+					android:layout_weight="1"/>
+
+				<RadioButton
+					android:text="Either"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:id="@+id/radioButton7"
+					android:layout_weight="1"/>
+
+			</RadioGroup>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>
