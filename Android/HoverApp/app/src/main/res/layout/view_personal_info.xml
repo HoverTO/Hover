@@ -28,7 +28,7 @@
 			              android:orientation="vertical">
 
 				<LinearLayout
-					android:id="@+id/viewA"
+					android:id="@+id/profile_view"
 					android:layout_width="match_parent"
 					android:layout_height="match_parent"
 					android:layout_weight="0.6"
@@ -51,13 +51,13 @@
 			</LinearLayout>
 
 			<android.support.design.widget.FloatingActionButton
-				android:id="@+id/fab"
+				android:id="@+id/btn_camera"
 				android:layout_width="match_parent"
 				android:layout_height="53dp"
 				android:layout_margin="16dp"
 				android:clickable="true"
 				android:src="@drawable/ic_camera_alt_white_24dp"
-				app:layout_anchor="@id/viewA"
+				app:layout_anchor="@id/profile_view"
 				app:layout_anchorGravity="bottom|right|end"/>
 
 		</android.support.design.widget.CoordinatorLayout>
@@ -86,7 +86,6 @@
 					android:id="@+id/input_name"
 					android:layout_width="264dp"
 					android:layout_height="wrap_content"
-					android:inputType="textEmailAddress"
 					android:hint="@string/input_name_hint" />
 
 			</android.support.design.widget.TextInputLayout>
