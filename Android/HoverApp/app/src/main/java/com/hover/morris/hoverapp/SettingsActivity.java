@@ -26,7 +26,7 @@ public class SettingsActivity extends AppCompatActivity {
 	private CustomPagerAdapter customPagerAdapter;
 	private Button next_button;
 
-
+	private SettingsData settingsData;
 	private PersonalInfoContainer personalInfoContainer;
 
 	@Override
@@ -46,6 +46,10 @@ public class SettingsActivity extends AppCompatActivity {
 				int count = viewPager.getAdapter().getCount();
 				if(page + 1 < count) {
 					viewPager.setCurrentItem(page + 1);
+				} else {
+					// TODO submit settings and go to main app
+					Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+					startActivity(intent);
 				}
 			}
 		});
@@ -64,13 +68,14 @@ public class SettingsActivity extends AppCompatActivity {
 			@Override
 			public void onPageScrollStateChanged(int state) {
 				if(viewPager.getCurrentItem() == viewPager.getAdapter().getCount() - 1) {
-					next_button.setEnabled(false);
+					next_button.setText("Done");
 				} else {
-					next_button.setEnabled(true);
+					next_button.setText("Next");
 				}
 			}
 		});
 
+		// Load all layouts to instantiate items
 		for(int i = 0; i < CustomPagerEnum.values().length; i++) {
 			customPagerAdapter.instantiateItem(viewPager, i);
 		}
@@ -92,7 +97,7 @@ public class SettingsActivity extends AppCompatActivity {
 		if(requestCode == STATION_SELECT_REQUEST) {
 			// Make sure request was successful
 			if(resultCode == RESULT_OK) {
-
+				// TODO add radio station to list
 			}
 		}
 	}

@@ -58,6 +58,11 @@
 		</activity>
 		<activity android:name=".StationSelectActivity">
 		</activity>
+		<activity
+			android:name=".MainActivity"
+			android:label="Book Your Trip"
+			android:theme="@style/AppTheme.NoActionBar">
+		</activity>
 	</application>
 
 </manifest>

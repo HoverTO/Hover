@@ -54,4 +54,18 @@
 		<item>Vice President</item>
 		<item>President</item>
 	</string-array>
+
+	<string-array name="talkativeness_levels">
+		<item>quiet</item>
+		<item>slightly talkative</item>
+		<item>average</item>
+		<item>occasional conversationalist</item>
+		<item>talkative</item>
+	</string-array>
+	<string name="title_activity_main">MainActivity</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
 </resources>

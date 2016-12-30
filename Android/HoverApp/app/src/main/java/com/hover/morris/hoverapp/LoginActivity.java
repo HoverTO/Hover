@@ -42,7 +42,6 @@ public class LoginActivity extends AppCompatActivity {
 				// Start the Signup activity
 				Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
 				startActivityForResult(intent, REQUEST_SIGNUP);
-				finish();
 				overridePendingTransition(R.anim.push_left_in, R.anim.push_left_out);
 			}
 		});
@@ -54,6 +53,12 @@ public class LoginActivity extends AppCompatActivity {
 	public void login() {
 		String email = email_text.getText().toString();
 		String password = password_text.getText().toString();
+
+		// TODO
+
+		Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+		startActivity(intent);
+		finish();
 	}
 
 	@Override

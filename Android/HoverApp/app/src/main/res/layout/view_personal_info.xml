@@ -146,17 +146,6 @@
 					android:hint="@string/input_phone_hint" />
 			</android.support.design.widget.TextInputLayout>
 
-			<TextView
-				android:text="Gender"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:id="@+id/gender_text_label"
-				android:layout_marginLeft="10dp"
-				android:layout_marginTop="10dp"
-				android:textSize="18sp"
-				android:textColor="@color/colorDark"
-				android:layout_below="@+id/input_phone_layout"/>
-
 			<RadioGroup
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
@@ -190,6 +179,16 @@
 				android:layout_alignParentStart="true"
 				android:layout_above="@+id/input_email_layout"
 				android:layout_alignTop="@+id/input_name_layout"/>
+
+			<TextView
+				android:text="Gender"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/gender_text_label"
+				android:textSize="18sp"
+				android:layout_below="@+id/input_phone_layout"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentEnd="true"/>
 
 		</RelativeLayout>
 
@@ -251,7 +250,9 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:text="@string/office_list_prompt"
-				android:layout_marginLeft="6dp"/>
+				android:layout_marginLeft="6dp"
+				android:textSize="18sp"
+				android:layout_marginBottom="10dp"/>
 
 			<Spinner
 				android:layout_width="match_parent"
@@ -265,7 +266,9 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:text="@string/group_list_prompt"
-				android:layout_marginLeft="6dp"/>
+				android:layout_marginLeft="6dp"
+				android:textSize="18sp"
+				android:layout_marginBottom="10dp"/>
 
 			<Spinner
 				android:layout_width="match_parent"
@@ -279,7 +282,9 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:text="@string/role_list_prompt"
-				android:layout_marginLeft="6dp"/>
+				android:layout_marginLeft="6dp"
+				android:textSize="18sp"
+				android:layout_marginBottom="10dp"/>
 
 			<Spinner
 				android:layout_width="match_parent"
@@ -294,15 +299,15 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:id="@+id/textView5"
-				android:layout_marginLeft="10dp"
-				android:layout_marginTop="10dp"
-				android:textSize="16sp"
-				android:textColor="@color/colorDark"/>
+				android:textSize="18sp"
+				android:layout_marginBottom="10dp"
+				android:layout_marginLeft="10dp"/>
 
 			<RadioGroup
 				android:orientation="horizontal"
 				android:layout_width="match_parent"
-				android:layout_height="wrap_content">
+				android:layout_height="wrap_content"
+				android:id="@+id/action_radiogroup">
 
 				<RadioButton
 					android:text="Drive"
