@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:fitsSystemWindows="true">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorPrimaryMedium"
+		android:paddingTop="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:paddingBottom="16dp">
+
+		<RelativeLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:elevation="6dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:paddingTop="6dp"
+				android:paddingBottom="6dp"
+				android:id="@+id/layout_smoke">
+
+				<TextView
+					android:text="Smoke"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20dp"
+					android:id="@+id/textView6"
+					android:layout_centerVertical="true"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:layout_marginLeft="12dp"/>
+
+				<ImageView
+					android:layout_height="32dp"
+					app:srcCompat="@drawable/tick_unselected"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentEnd="true"
+					android:id="@+id/imageView5"
+					android:layout_width="32dp"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"/>
+
+				<ImageView
+					android:layout_width="32dp"
+					app:srcCompat="@drawable/check_unselected"
+					android:id="@+id/imageView2"
+					android:layout_height="32dp"
+					android:layout_alignParentTop="true"
+					android:layout_toLeftOf="@+id/imageView5"
+					android:layout_toStartOf="@+id/imageView5"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@id/layout_smoke"
+				android:paddingTop="6dp"
+				android:paddingBottom="6dp"
+
+				android:id="@+id/layout_ac">
+
+				<TextView
+					android:text="AC in the summer?"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textSize="20dp"
+					android:id="@+id/textView7"
+					android:layout_centerVertical="true"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:layout_marginLeft="12dp"/>
+
+				<ImageView
+					android:layout_height="32dp"
+					app:srcCompat="@drawable/tick_unselected"
+					android:layout_centerVertical="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentEnd="true"
+					android:id="@+id/imageView8"
+					android:layout_width="32dp"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"/>
+
+				<ImageView
+					android:layout_width="32dp"
+					app:srcCompat="@drawable/check_unselected"
+					android:id="@+id/imageView3"
+					android:layout_height="32dp"
+					android:layout_alignParentTop="true"
+					android:layout_toLeftOf="@+id/imageView8"
+					android:layout_toStartOf="@+id/imageView8"
+					android:layout_marginLeft="6dp"
+					android:layout_marginRight="6dp"/>
+
+			</RelativeLayout>
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@id/layout_ac"
+				android:paddingTop="6dp"
+				android:paddingBottom="6dp"
+				android:id="@+id/layout_gender_preference">
+
+
+				<TextView
+					android:text="Gender preference"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/layout_ac"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:id="@+id/textView8"
+					android:layout_marginLeft="10dp"
+					android:textSize="20dp"
+					android:layout_marginBottom="10dp"/>
+
+				<RadioGroup
+					android:orientation="horizontal"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/textView8"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentStart="true"
+					android:layout_alignParentRight="true"
+					android:layout_alignParentEnd="true">
+
+					<RadioButton
+						android:text="Male"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/radioButton8"
+						android:layout_weight="1"/>
+
+					<RadioButton
+						android:text="Female"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/radioButton3"
+						android:layout_weight="1"/>
+
+					<RadioButton
+						android:text="Either"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/radioButton"
+						android:layout_weight="1"/>
+				</RadioGroup>
+			</RelativeLayout>
+
+		</RelativeLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:elevation="6dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<TextView
+				android:text="Temperature in the winter"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/text_winter_temperature"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_marginLeft="10dp"
+				android:textSize="20sp"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:text="20 °C"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/winter_temperature"
+				android:gravity="center"
+				android:textSize="36sp"/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seekBar3"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:layout_marginTop="12dp"
+				android:progress="50"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:elevation="6dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<TextView
+				android:text="Temperature in the summer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView17"
+				android:layout_marginLeft="10dp"
+				android:textSize="20sp"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:text="20 °C"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView20"
+				android:gravity="center"
+				android:textSize="36sp"/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seekBar4"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:layout_marginTop="12dp"
+				android:progress="50"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/colorPrimary"
+			android:layout_marginBottom="16dp"
+			android:elevation="6dp"
+			android:paddingTop="16dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:paddingBottom="16dp">
+
+			<TextView
+				android:text="How talkative are you?"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView18"
+				android:textSize="20sp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginBottom="10dp"/>
+
+			<TextView
+				android:text="average"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/textView21"
+				android:gravity="center"
+				android:textSize="18sp"/>
+
+			<SeekBar
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/seekBar5"
+				android:layout_marginBottom="12dp"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp"
+				android:layout_marginTop="12dp"
+				android:progress="50"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+</ScrollView>

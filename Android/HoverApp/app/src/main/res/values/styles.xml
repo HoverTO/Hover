@@ -1,0 +1,62 @@
+<resources>
+
+	<!-- Base application theme. -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorSecondary</item>
+		<item name="colorPrimaryDark">@color/colorSecondary</item>
+		<item name="colorAccent">@color/colorTertiaryDark</item>
+
+		<item name="colorButtonNormal">@color/colorTertiary</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppDarkTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="android:windowBackground">@color/colorSecondary</item>
+
+		<item name="colorControlNormal">@color/colorPrimaryDark</item>
+		<item name="colorControlActivated">@color/colorPrimary</item>
+		<item name="colorControlHighlight">@color/colorPrimary</item>
+		<item name="android:textColorHint">@color/colorPrimaryDark</item>
+
+		<item name="colorButtonNormal">@color/colorSecondaryDark</item>
+		<item name="android:textColor">@color/colorPrimary</item>
+	</style>
+
+	<style name="AppDarkTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppDarkTheme.Dialog" parent="Theme.AppCompat.Dialog">
+		<item name="colorAccent">@color/colorPrimary</item>
+		<item name="android:textColorPrimary">@color/colorPrimaryDark</item>
+		<item name="android:background">@color/colorSecondary</item>
+	</style>
+
+	<style name="AppLightTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<!-- Customize your theme here. -->
+		<item name="colorPrimary">@color/colorPrimary</item>
+		<item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+		<item name="colorAccent">@color/colorTertiaryDark</item>
+
+		<item name="colorButtonNormal">@color/colorTertiary</item>
+	</style>
+
+	<style name="AppLightTheme.NoActionBar">
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="AppTheme.NoActionBar.AppBarOverlay"
+	       parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+	<style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

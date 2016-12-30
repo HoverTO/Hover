@@ -1,0 +1,71 @@
+<resources>
+	<string name="app_name">HoverApp</string>
+	<string name="title_activity_hover">Hover</string>
+	<string name="company">Hover</string>
+	<string name="company_caps">HOVER</string>
+	<string name="logo_description">Hover Logo</string>
+	<string name="slogan">Let\'s Ride</string>
+
+	<string name="welcome_message">
+		Hello! Welcome to HOVER. Shortly, you will be able to search for carpoolers around your area.
+		Before we get started, let us ask a few questions about your preferences so we can find the best matches for you.
+	</string>
+
+	<string name="input_firstname_hint">First Name</string>
+	<string name="input_lastname_hint">Last Name</string>
+	<string name="input_name_hint">Name</string>
+	<string name="input_email_hint">Email</string>
+	<string name="input_phone_hint">Phone Number</string>
+	<string name="input_password_hint">Password</string>
+	<string name="input_home_address_hint">Home Address</string>
+	<string name="input_work_address_hint">Work Address</string>
+	<string name="input_postal_code_hint">Postal Code</string>
+
+	<string name="login_button_text">Login</string>
+	<string name="signup_link_text">No account yet? Create one</string>
+
+	<string name="personal_info">Personal Information</string>
+	<string name="radio_stations">Radio Stations</string>
+	<string name="orange">Preferences</string>
+
+	<string name="office_list_prompt">Office</string>
+	<string name="group_list_prompt">Group</string>
+	<string name="role_list_prompt">Role</string>
+
+	<string-array name="office_list">
+		<item>--Select office--</item>
+		<item>General Motors</item>
+	</string-array>
+
+	<string-array name="group_list">
+		<item>--Select group--</item>
+		<item>Engineering</item>
+		<item>Sales</item>
+		<item>Information Technology</item>
+	</string-array>
+
+	<string-array name="role_list">
+		<item>--Select role--</item>
+		<item>Analyst</item>
+		<item>Senior Analyst</item>
+		<item>Manager</item>
+		<item>Project Leader</item>
+		<item>Senior Manager</item>
+		<item>Vice President</item>
+		<item>President</item>
+	</string-array>
+
+	<string-array name="talkativeness_levels">
+		<item>quiet</item>
+		<item>slightly talkative</item>
+		<item>average</item>
+		<item>occasional conversationalist</item>
+		<item>talkative</item>
+	</string-array>
+	<string name="title_activity_main">MainActivity</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_settings">Settings</string>
+</resources>
