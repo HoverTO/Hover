@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true"
+	tools:context="com.hover.morris.hoverapp.activity.TripSummaryActivity">
+
+	<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingTop="16dp"
+		android:paddingBottom="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:background="@color/colorPrimaryMedium">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="3"
+			android:elevation="6dp"
+			android:layout_marginBottom="16dp">
+
+			<fragment
+				android:id="@+id/map"
+				android:name="com.google.android.gms.maps.SupportMapFragment"
+				android:layout_width="match_parent"
+				android:layout_height="300dp"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="2"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp"
+			android:paddingTop="8dp"
+			android:paddingBottom="8dp"
+			android:elevation="6dp"
+			android:layout_marginBottom="16dp"
+			android:background="@color/colorPrimary">
+
+			<ImageView
+				android:src="@drawable/ic_account_circle_black_64dp"
+				android:id="@+id/profile_picture"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_marginTop="8dp"
+				android:layout_marginLeft="32dp"
+				android:layout_width="80dp"
+				android:layout_height="80dp"/>
+
+			<TextView
+				android:text="Name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/name_view"
+				android:layout_alignRight="@+id/profile_picture"
+				android:layout_alignEnd="@+id/profile_picture"
+				android:gravity="center"
+				android:layout_below="@+id/profile_picture"
+				android:layout_alignLeft="@+id/profile_picture"
+				android:layout_alignStart="@+id/profile_picture"/>
+
+			<TextView
+				android:text="Depart:"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/depart_label"
+				android:layout_marginTop="16dp"
+				android:layout_alignTop="@+id/profile_picture"
+				android:layout_toRightOf="@+id/profile_picture"
+				android:layout_toEndOf="@+id/profile_picture"
+				android:layout_marginLeft="32dp"
+				/>
+
+			<TextView
+				android:text="8:45 AM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/arrive_time"
+				android:layout_marginLeft="16dp"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:layout_marginStart="16dp"
+				android:layout_alignBaseline="@+id/arrive_label"
+				android:layout_alignBottom="@+id/arrive_label"
+				android:layout_toRightOf="@+id/arrive_label"
+				android:layout_toEndOf="@+id/arrive_label"/>
+
+			<TextView
+				android:text="Arrive:"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/arrive_label"
+				android:layout_marginBottom="16dp"
+				android:layout_above="@+id/name_view"
+				android:layout_alignRight="@+id/depart_label"
+				android:layout_alignEnd="@+id/depart_label"
+				android:layout_marginTop="16dp"/>
+
+			<TextView
+				android:text="8:15 AM"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/depart_time"
+				android:textSize="18sp"
+				android:textStyle="bold"
+				android:layout_alignBaseline="@+id/depart_label"
+				android:layout_alignBottom="@+id/depart_label"
+				android:layout_alignLeft="@+id/arrive_time"
+				android:layout_alignStart="@+id/arrive_time"/>
+
+			<TableLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:stretchColumns="*"
+				android:layout_below="@+id/name_view"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"
+				android:layout_marginTop="8dp"
+				android:layout_marginBottom="8dp"
+				android:id="@+id/tableLayout">
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					>
+
+					<TextView
+						android:text="30 min"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/duration"
+						android:gravity="center"
+						android:textSize="24sp"/>
+
+					<TextView
+						android:text="$5.23"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/cost"
+						android:gravity="center"
+						android:textSize="24sp"/>
+
+					<TextView
+						android:text="5.4 kg"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/co2"
+						android:gravity="center"
+						android:textSize="24sp"/>
+				</TableRow>
+
+				<TableRow
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:text="Time"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/time_label"
+						android:gravity="center"/>
+
+					<TextView
+						android:text="Cost"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/textView39"
+						android:gravity="center"/>
+
+					<TextView
+						android:text="CO2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:id="@+id/co2_label"
+						android:gravity="center"/>
+				</TableRow>
+			</TableLayout>
+
+			<TextView
+				android:text="You saved 6 minutes and $5 on this trip!"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/message"
+				android:gravity="center"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentLeft="true"
+				android:layout_alignParentStart="true"/>
+
+		</RelativeLayout>
+
+	</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

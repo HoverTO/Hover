@@ -6,7 +6,7 @@
 	android:id="@+id/activity_station_select"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="com.hover.morris.hoverapp.StationSelectActivity">
+	tools:context="com.hover.morris.hoverapp.activity.StationSelectActivity">
 
 
 </RelativeLayout>

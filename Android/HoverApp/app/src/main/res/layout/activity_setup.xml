@@ -6,7 +6,7 @@
 	android:id="@+id/activity_setup"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
-	tools:context="com.hover.morris.hoverapp.WelcomeActivity">
+	tools:context="com.hover.morris.hoverapp.activity.WelcomeActivity">
 
 	<RelativeLayout
 		android:layout_width="match_parent"

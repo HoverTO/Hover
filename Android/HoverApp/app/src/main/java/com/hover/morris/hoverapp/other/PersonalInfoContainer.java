@@ -1,4 +1,4 @@
-package com.hover.morris.hoverapp;
+package com.hover.morris.hoverapp.other;
 
 import android.support.design.widget.FloatingActionButton;
 import android.util.Log;
@@ -7,6 +7,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+
+import com.hover.morris.hoverapp.R;
 
 /**
  * Created by morris on 2016-12-28.
@@ -20,7 +22,6 @@ public class PersonalInfoContainer {
 
 	public EditText input_home_address, input_postal_code, input_work_address;
 	public Spinner spinner_office, spinner_group, spinner_role;
-	public RadioGroup radio_action;
 
 	public PersonalInfoContainer(View view) {
 		profile_image = (ImageView) view.findViewById(R.id.profile_image);
@@ -39,8 +40,6 @@ public class PersonalInfoContainer {
 		spinner_office = (Spinner) view.findViewById(R.id.office_spinner);
 		spinner_group = (Spinner) view.findViewById(R.id.group_spinner);
 		spinner_role = (Spinner) view.findViewById(R.id.role_spinner);
-
-		radio_action = (RadioGroup) view.findViewById(R.id.action_radiogroup);
 
 		camera_button.setOnClickListener(new View.OnClickListener() {
 			@Override
