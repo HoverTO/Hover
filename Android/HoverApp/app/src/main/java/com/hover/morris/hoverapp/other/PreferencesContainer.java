@@ -1,4 +1,4 @@
-package com.hover.morris.hoverapp;
+package com.hover.morris.hoverapp.other;
 
 import android.view.View;
 

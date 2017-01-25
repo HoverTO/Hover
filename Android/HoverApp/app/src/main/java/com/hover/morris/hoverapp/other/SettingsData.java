@@ -1,10 +1,10 @@
-package com.hover.morris.hoverapp;
+package com.hover.morris.hoverapp.other;
 
 /**
  * Created by morris on 2016-12-30.
  */
 
-class SettingsData {
+public class SettingsData {
 	private String name, email, phoneNumber, gender, homeAddress, postalCode, workAddress;
 
 	public String getName() {
